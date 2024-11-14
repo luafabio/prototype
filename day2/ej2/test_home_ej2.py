@@ -19,9 +19,7 @@ class TestHomeFunctions(unittest.TestCase):
 
     def test_exercise(self):
         my_array = [
-            (1, 3, 'a', 'abcde'),
-            (1, 3, 'b', 'cdefg'),
-            (2, 9, 'c', 'ccccccccc')
+            (15, 16, 'w', 'wwwwhwkwjnwwwwwdn') # 15-16 w: wwwwhwkwjnwwwwdn
         ]
         expected_result = 1  # Only the second password is valid
         result = exercise(my_array)

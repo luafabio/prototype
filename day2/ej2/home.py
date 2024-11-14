@@ -27,7 +27,8 @@ def read_file_to_array(filename):
 def exercise(my_array):
     valid_passwords = 0
     for min_val, max_val, char, password in my_array:
-        if password[min_val - 1] == char and password[max_val - 1] != char:
+
+        if (password[min_val - 1] == char and password[max_val - 1] != char) or (password[min_val - 1] != char and password[max_val - 1] == char):
             valid_passwords += 1
     return valid_passwords
 
